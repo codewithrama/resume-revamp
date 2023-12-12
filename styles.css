@@ -1,61 +1,147 @@
-body{
-    padding: 0px;
-    background:linear-gradient(89deg, #8337FD, #181719, #36343B, #39363D);
+body {
+  padding: 0px;
+  margin: 3px;
+  background: linear-gradient(89deg, #8337fd, #181719, #36343b, #39363d);
 }
-.nav{
-    display: flex ;
-    justify-content:end;
 
+.nav {
+  display: flex;
+  justify-content: end;
 }
-.nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0px 20px;
-    padding: 0px 20px;
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 20px;
+  padding: 0px 20px;
+  font-size: 20px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border: 50px solid white;
+  border-radius: 50%;
+}
+
+.img :hover {
+  transform: rotate(360deg);
+  transition: 1s;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin: 0px 20px;
+}
+
+.btn {
+  background-color: #8337fd;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #181719;
+  transition: 1s;
+}
+
+.edu h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+}
+
+.exp h3 {
+  color: white;
+  font-size: 20px;
+}
+.others h3{
     font-size: 20px;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.nav ul li a{
+    color:white;
+  }
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background: white;
+    margin: 2px 5px;
+  }
+
+  .main {
+    flex-direction: column;
+    color: black;
+  }
+
+  .intro {
+    margin: 20px 0px;
+    color: black;
+  }
+
+  .nav {
+    flex-direction: column;
+
+  }
+
+  .nav ul li a {
     text-decoration: none;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.photo{
-    width: 200px;
-    height: 200px;
-    border: 50px solid white;
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  
+  .photo {
+    width: 150px;
+    height: 150px;
+    border: 20px solid white;
     border-radius: 50%;
-   
-}
+  }
 
-.img :hover{
-    transform: rotate(360deg);
-    transition: 1s;
-}
-    
-.main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.intro{
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    margin: 0px 20px;
-}
+  .btn {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
 
-.btn{
-    background-color: #8337FD;
-    color: white;
-    padding: 20px 20px;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer; 
-}
+  .edu h3 {
+    font-size: 15px;
+    color: black;
+  }
 
+  .exp h3 {
+    font-size: 15px;
+    color: #000;
+  }
+  .others h3{
+    font-size: 15px;
+    color: #000;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
 
 
