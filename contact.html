@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="./contact.css">
+
 </head>
 
 <body>
@@ -13,8 +14,8 @@
         <div class="gif">
             <img src="./assets/images/lettering-lettering-contact-us-with-hand-text.gif" alt="GIF">
         </div>
-        <div class="form">
-            <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="form" >
+            <form action="https://api.web3forms.com/submit" method="POST" >
 
                 <input type="hidden" name="access_key" value="b946c840-21d7-483c-a1cb-91c932b7f3c4">
                 <label for="name">Name</label>
@@ -22,12 +23,15 @@
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 <label for="message">Message</label>
-                <input type="text" name="message" id="message" placeholder="Enter your message" required>
+               <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
                 <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                <button type="submit">Submit Form</button>
             </form>
+            
+            <button type="submit">Submit Form</button>
+
         </div>
     </div>
+    <a href="./index.html"><button>Back to Home</button></a>
 
 </body>
 

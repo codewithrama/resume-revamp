@@ -72,6 +72,7 @@ body {
 
 .cards {
   display: flex;
+  justify-content: space-evenly;
   gap: 10px;
 }
 
@@ -84,6 +85,10 @@ body {
     color:white;
   }
 
+footer{
+  color: white;
+  font-size: 10px;
+}
 
 @media screen and (max-width: 768px) {
   body {
