@@ -72,6 +72,7 @@ body {
 
 .cards {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   gap: 10px;
 }
@@ -106,8 +107,13 @@ footer{
     color: black;
   }
 
-  .nav {
+  .nav ul {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #000;
+   
 
   }
 
